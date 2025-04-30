@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="divTP2">
+  <p>Langages basés sur ECMAScript :</p>
+  <ul id="liste"></ul>
+<script>script.js</script>
+</body>
+<script>
+    const langages = ["JavaScript", "ActionScript", "EX4"];
+    const ul = document.getElementById("liste");
+  
+    for (let i = 0; i < langages.length; i++) {
+      let li = document.createElement("li");
+      li.textContent = langages[i];
+      ul.appendChild(li);
+    }
+  </script>
+  
+</html>

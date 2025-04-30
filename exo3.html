@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire Upload</title>
+</head>
+<body>
+  <div id="divTP4"></div>
+
+  <script>
+    // Créer le formulaire
+    const form = document.createElement("form");
+    form.enctype = "multipart/form-data";
+    form.method = "post";
+    form.action = "upload.php";
+
+    const fieldset = document.createElement("fieldset");
+
+    // Légende
+    const legend = document.createElement("legend");
+    legend.textContent = "Uploader une image";
+    fieldset.appendChild(legend);
+
+    // Conteneur centré
+    const divCenter = document.createElement("div");
+    divCenter.style.textAlign = "center";
+
+    // Label
+    const label = document.createElement("label");
+    label.setAttribute("for", "inputUpload");
+    label.textContent = "Image à uploader :";
+    divCenter.appendChild(label);
+    // Champ de fichier
+    const inputFile = document.createElement("input");
+    inputFile.type = "file";
+    inputFile.name = "inputUpload";
+    inputFile.id = "inputUpload";
+    divCenter.appendChild(document.createElement("br"));
+    divCenter.appendChild(inputFile);
+
+    // Saut de ligne + bouton
+    divCenter.appendChild(document.createElement("br"));
+
+    const submitBtn = document.createElement("input");
+    submitBtn.type = "submit";
+    submitBtn.value = "Envoyer";
+    divCenter.appendChild(submitBtn);
+
+    // Ajouter tout au formulaire
+    fieldset.appendChild(divCenter);
+    form.appendChild(fieldset);
+
+    // Ajouter le formulaire au div existant
+    document.getElementById("divTP4").appendChild(form);
+  </script>
+</body>
+</html>
+

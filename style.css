@@ -1,0 +1,90 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: cadetblue;
+}
+
+header {
+  background-color: black;
+  color: blue;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  background-color:red;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover{
+  color:aqua;
+  background-color: black;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  background-color:black;
+  color: white;
+}
+.intro .bloc {
+  width: 40%;
+  text-align: center;
+}
+
+.intro img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.portfolio {
+  padding: 2em;
+}
+
+.portfolio h2 {
+  text-align: center;
+}
+
+.projets {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projet {
+  width: 200px;
+  text-align: center;
+}
+
+.projet img {
+  width: 100%;
+  height: auto;
+  background-color: rgb(107, 95, 160);
+}
+
+
+.bloc{
+  background-color: black;
+  color: white;
+} 
+.portfolio{
+  color: white;
+  background-color: black;
+} 
+
